@@ -60,7 +60,7 @@ comes to you via headers. In this case, the boundary is:
 Now, having this two key values then you can implement it:
 
 ```
-	var multipart = require('parse-multipart');
+	var multipart = require('@davidov541/multipart-form-parser');
 	var body = "..the multipart raw body..";
 	var boundary = "----WebKitFormBoundaryDtbT5UpPj83kllfw";
 	var parts = multipart.Parse(body,boundary);
